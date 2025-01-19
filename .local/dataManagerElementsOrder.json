@@ -1,0 +1,62 @@
+{
+  "Workflows": [
+    {
+      "Path": null,
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [],
+      "ArgumentsSectionElementsOrder": null,
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "DateTime Manipulation.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "dateTwo&Sequence_32",
+        "dateOne&Sequence_32",
+        "dateAdd&Sequence_30",
+        "dateTwo&Sequence_31",
+        "dateOne&Sequence_31",
+        "dateNow&Sequence_2",
+        "dateToday&Sequence_2",
+        "dateUtc&Sequence_2",
+        "dateSpecific&Sequence_2",
+        "strDate&Sequence_3",
+        "arrValidDateFormats&Sequence_3",
+        "dateCDate&Sequence_8",
+        "dateConvert&Sequence_9",
+        "dateParse&Sequence_10",
+        "dateParseExact&Sequence_12",
+        "arrDatesToConvert&Sequence_13",
+        "dateParseExactMultiple&Sequence_13",
+        "dateParse&Sequence_16",
+        "boolDateIsValid&Sequence_16",
+        "dateParseExact&Sequence_17",
+        "boolDateIsValid&Sequence_17",
+        "arrDatesToConvert&Sequence_25",
+        "dateParseExactMultiple&Sequence_25",
+        "boolDateIsValid&Sequence_26",
+        "dateNow&Sequence_4"
+      ],
+      "ArgumentsSectionElementsOrder": [],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "TimeSpan Manipulation.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "dateNow&Sequence_2",
+        "dateToday&Sequence_2",
+        "dateUtc&Sequence_2",
+        "dateSpecific&Sequence_2",
+        "tsNew&Sequence_2",
+        "tsFromMinutes&Sequence_2",
+        "tsFromSeconds&Sequence_2"
+      ],
+      "ArgumentsSectionElementsOrder": [],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    }
+  ]
+}

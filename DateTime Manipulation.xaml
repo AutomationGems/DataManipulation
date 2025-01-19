@@ -78,15 +78,15 @@
       <AssemblyReference>System.Runtime.Numerics</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="DateTime_Manipulation" sap:VirtualizedContainerService.HintSize="1547,778.04" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="DateTime_Manipulation" sap:VirtualizedContainerService.HintSize="1933,1138.04" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <sap:WorkflowViewStateService.ViewState>
       <scg:Dictionary x:TypeArguments="x:String, x:Object">
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="484,57" sap2010:WorkflowViewState.IdRef="CommentOut_1">
+    <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="450,57" sap2010:WorkflowViewState.IdRef="CommentOut_1">
       <ui:CommentOut.Body>
-        <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="484,315" sap2010:WorkflowViewState.IdRef="Sequence_29">
+        <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="484,403" sap2010:WorkflowViewState.IdRef="Sequence_29">
           <sap:WorkflowViewStateService.ViewState>
             <scg:Dictionary x:TypeArguments="x:String, x:Object">
               <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -557,7 +557,7 @@
               </ui:ForEach>
             </Sequence>
           </Sequence>
-          <Sequence sap2010:Annotation.AnnotationText="Different ways to convert DateTime to specific String-format" DisplayName="From DateTime to String" sap:VirtualizedContainerService.HintSize="450,79" sap2010:WorkflowViewState.IdRef="Sequence_4">
+          <Sequence sap2010:Annotation.AnnotationText="Different ways to convert DateTime to specific String-format" DisplayName="From DateTime to String" sap:VirtualizedContainerService.HintSize="450,88" sap2010:WorkflowViewState.IdRef="Sequence_4">
             <Sequence.Variables>
               <Variable x:TypeArguments="s:DateTime" Name="dateNow" />
             </Sequence.Variables>
@@ -593,6 +593,137 @@
             <ui:LogMessage DisplayName="Log Message - 'ToShortDateString'" sap:VirtualizedContainerService.HintSize="416,173" sap2010:WorkflowViewState.IdRef="LogMessage_28" Level="Info" Message="[&quot;ToShortDateString: &quot; + dateNow.ToShortDateString]" />
             <ui:LogMessage DisplayName="Log Message - 'ToShortTimeString'" sap:VirtualizedContainerService.HintSize="416,164" sap2010:WorkflowViewState.IdRef="LogMessage_29" Level="Info" Message="[&quot;ToShortTimeString: &quot; + dateNow.ToShortTimeString]" />
           </Sequence>
+          <Sequence sap2010:Annotation.AnnotationText="Different functions to work with DateTimes" DisplayName="DateTime Functions" sap:VirtualizedContainerService.HintSize="450,79" sap2010:WorkflowViewState.IdRef="Sequence_5">
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <Sequence sap2010:Annotation.AnnotationText="Add positiv or negativ amounts of time to a DateTime" DisplayName="Add" sap:VirtualizedContainerService.HintSize="450,88" sap2010:WorkflowViewState.IdRef="Sequence_30">
+              <Sequence.Variables>
+                <Variable x:TypeArguments="s:DateTime" Name="dateAdd" />
+              </Sequence.Variables>
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                  <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                  <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+              <Assign DisplayName="Assign - dateEnd" sap:VirtualizedContainerService.HintSize="434,114" sap2010:WorkflowViewState.IdRef="Assign_47">
+                <Assign.To>
+                  <OutArgument x:TypeArguments="s:DateTime">[dateAdd]</OutArgument>
+                </Assign.To>
+                <Assign.Value>
+                  <InArgument x:TypeArguments="s:DateTime">[Now]</InArgument>
+                </Assign.Value>
+                <sap:WorkflowViewStateService.ViewState>
+                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                    <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                    <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                  </scg:Dictionary>
+                </sap:WorkflowViewStateService.ViewState>
+              </Assign>
+              <ui:LogMessage DisplayName="Log Message - Add Hours" sap:VirtualizedContainerService.HintSize="434,173" sap2010:WorkflowViewState.IdRef="LogMessage_31" Level="Info" Message="[dateAdd.ToString + &quot; -- &quot; + dateAdd.AddDays(-3).ToString]">
+                <sap:WorkflowViewStateService.ViewState>
+                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                    <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                    <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                  </scg:Dictionary>
+                </sap:WorkflowViewStateService.ViewState>
+              </ui:LogMessage>
+              <ui:LogMessage DisplayName="Log Message - Subtract Days" sap:VirtualizedContainerService.HintSize="434,164" sap2010:WorkflowViewState.IdRef="LogMessage_30" Level="Info" Message="[dateAdd.ToString + &quot; -- &quot; + dateAdd.AddDays(-5).ToString]">
+                <sap:WorkflowViewStateService.ViewState>
+                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                    <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                    <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                  </scg:Dictionary>
+                </sap:WorkflowViewStateService.ViewState>
+              </ui:LogMessage>
+            </Sequence>
+            <Sequence sap2010:Annotation.AnnotationText="Calculate the difference between to DateTimes" DisplayName="Subtract / DateDiff" sap:VirtualizedContainerService.HintSize="450,88" sap2010:WorkflowViewState.IdRef="Sequence_31">
+              <Sequence.Variables>
+                <Variable x:TypeArguments="s:DateTime" Name="dateOne" />
+                <Variable x:TypeArguments="s:DateTime" Name="dateTwo" />
+              </Sequence.Variables>
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                  <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                  <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+              <Assign DisplayName="Assign - dateOne" sap:VirtualizedContainerService.HintSize="434,114" sap2010:WorkflowViewState.IdRef="Assign_50">
+                <Assign.To>
+                  <OutArgument x:TypeArguments="s:DateTime">[dateOne]</OutArgument>
+                </Assign.To>
+                <Assign.Value>
+                  <InArgument x:TypeArguments="s:DateTime">[Now]</InArgument>
+                </Assign.Value>
+              </Assign>
+              <Assign DisplayName="Assign - dateTwo" sap:VirtualizedContainerService.HintSize="434,114" sap2010:WorkflowViewState.IdRef="Assign_51">
+                <Assign.To>
+                  <OutArgument x:TypeArguments="s:DateTime">[dateTwo]</OutArgument>
+                </Assign.To>
+                <Assign.Value>
+                  <InArgument x:TypeArguments="s:DateTime">[dateOne.AddHours(-543)]</InArgument>
+                </Assign.Value>
+              </Assign>
+              <ui:LogMessage DisplayName="Log Message - Subtract" sap:VirtualizedContainerService.HintSize="434,173" sap2010:WorkflowViewState.IdRef="LogMessage_33" Level="Info" Message="[dateOne.Subtract(dateTwo)]" />
+              <ui:LogMessage DisplayName="Log Message - DateDiff, Hours" sap:VirtualizedContainerService.HintSize="434,173" sap2010:WorkflowViewState.IdRef="LogMessage_34" Level="Info" Message="[DateDiff(DateInterval.Hour,dateOne, dateTwo).ToString]" />
+              <ui:LogMessage DisplayName="Log Message - DateDiff, Days" sap:VirtualizedContainerService.HintSize="434,173" sap2010:WorkflowViewState.IdRef="LogMessage_35" Level="Info" Message="[DateDiff(DateInterval.Day,dateOne, dateTwo).ToString]" />
+              <ui:LogMessage sap2010:Annotation.AnnotationText="https://support.microsoft.com/en-us/office/datediff-function-e6dd7ee6-3d01-4531-905c-e24fc238f85f" DisplayName="Log Message - DateDiff, Days" sap:VirtualizedContainerService.HintSize="434,206" sap2010:WorkflowViewState.IdRef="LogMessage_36" Level="Info" Message="[DateDiff(&quot;s&quot;,dateTwo, dateOne).ToString]">
+                <sap:WorkflowViewStateService.ViewState>
+                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                    <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+                  </scg:Dictionary>
+                </sap:WorkflowViewStateService.ViewState>
+              </ui:LogMessage>
+            </Sequence>
+            <Sequence sap2010:Annotation.AnnotationText="Compare two DateTimes equality" DisplayName="Comparison" sap:VirtualizedContainerService.HintSize="450,79" sap2010:WorkflowViewState.IdRef="Sequence_32">
+              <Sequence.Variables>
+                <Variable x:TypeArguments="s:DateTime" Name="dateOne" />
+                <Variable x:TypeArguments="s:DateTime" Name="dateTwo" />
+              </Sequence.Variables>
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                  <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                  <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+              <Assign DisplayName="Assign - dateOne" sap:VirtualizedContainerService.HintSize="434,114" sap2010:WorkflowViewState.IdRef="Assign_52">
+                <Assign.To>
+                  <OutArgument x:TypeArguments="s:DateTime">[dateOne]</OutArgument>
+                </Assign.To>
+                <Assign.Value>
+                  <InArgument x:TypeArguments="s:DateTime">[Now]</InArgument>
+                </Assign.Value>
+              </Assign>
+              <Assign DisplayName="Assign - dateTwo" sap:VirtualizedContainerService.HintSize="434,114" sap2010:WorkflowViewState.IdRef="Assign_53">
+                <Assign.To>
+                  <OutArgument x:TypeArguments="s:DateTime">[dateTwo]</OutArgument>
+                </Assign.To>
+                <Assign.Value>
+                  <InArgument x:TypeArguments="s:DateTime">[Now.AddHours(-7)]</InArgument>
+                </Assign.Value>
+              </Assign>
+              <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="434,173" sap2010:WorkflowViewState.IdRef="LogMessage_42" Level="Info" Message="[&quot;dateOne: &quot; + dateOne.ToString + Environment.NewLine +&#xD;&#xA;&quot;dateTwo: &quot; + dateTwo.ToString]" />
+              <ui:LogMessage DisplayName="Log Message - '='" sap:VirtualizedContainerService.HintSize="434,173" sap2010:WorkflowViewState.IdRef="LogMessage_37" Level="Info" Message="[dateOne = dateTwo]" />
+              <ui:LogMessage DisplayName="Log Message - 'Equals'" sap:VirtualizedContainerService.HintSize="434,173" sap2010:WorkflowViewState.IdRef="LogMessage_40" Level="Info" Message="[dateOne.Equals(dateTwo)]" />
+              <ui:LogMessage DisplayName="Log Message - 'Equals' (Date)" sap:VirtualizedContainerService.HintSize="434,173" sap2010:WorkflowViewState.IdRef="LogMessage_41" Level="Info" Message="[dateOne.Date.Equals(dateTwo.Date)]" />
+              <ui:LogMessage sap2010:Annotation.AnnotationText="dateOne Larger / Newer then dateTwo" DisplayName="Log Message - Is dateOne latest?" sap:VirtualizedContainerService.HintSize="434,204" sap2010:WorkflowViewState.IdRef="LogMessage_38" Level="Info" Message="[dateOne &lt; dateTwo]">
+                <sap:WorkflowViewStateService.ViewState>
+                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                    <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+                  </scg:Dictionary>
+                </sap:WorkflowViewStateService.ViewState>
+              </ui:LogMessage>
+              <ui:LogMessage DisplayName="Log Message - Is dateOne latest?" sap:VirtualizedContainerService.HintSize="434,164" sap2010:WorkflowViewState.IdRef="LogMessage_39" Level="Info" Message="[dateOne &gt; dateTwo]" />
+            </Sequence>
+          </Sequence>
         </Sequence>
       </ui:CommentOut.Body>
       <sap:WorkflowViewStateService.ViewState>
@@ -602,111 +733,7 @@
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
     </ui:CommentOut>
-    <Sequence sap2010:Annotation.AnnotationText="Different functions to work with DateTimes" DisplayName="DateTime Functions" sap:VirtualizedContainerService.HintSize="484,600" sap2010:WorkflowViewState.IdRef="Sequence_5">
-      <Sequence.Variables>
-        <Variable x:TypeArguments="s:DateTime" Name="dateStart" />
-        <Variable x:TypeArguments="s:DateTime" Name="dateEnd" />
-        <Variable x:TypeArguments="s:DateTime" Name="dateEndTwo" />
-        <Variable x:TypeArguments="s:DateTime" Name="dateStartTwo" />
-      </Sequence.Variables>
-      <sap:WorkflowViewStateService.ViewState>
-        <scg:Dictionary x:TypeArguments="x:String, x:Object">
-          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
-          <x:Boolean x:Key="IsPinned">False</x:Boolean>
-          <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
-        </scg:Dictionary>
-      </sap:WorkflowViewStateService.ViewState>
-      <Sequence DisplayName="Add" sap:VirtualizedContainerService.HintSize="450,57" sap2010:WorkflowViewState.IdRef="Sequence_30">
-        <sap:WorkflowViewStateService.ViewState>
-          <scg:Dictionary x:TypeArguments="x:String, x:Object">
-            <x:Boolean x:Key="IsExpanded">False</x:Boolean>
-            <x:Boolean x:Key="IsPinned">False</x:Boolean>
-          </scg:Dictionary>
-        </sap:WorkflowViewStateService.ViewState>
-        <Assign DisplayName="Assign - dateEnd" sap:VirtualizedContainerService.HintSize="416,57" sap2010:WorkflowViewState.IdRef="Assign_47">
-          <Assign.To>
-            <OutArgument x:TypeArguments="s:DateTime">[dateEnd]</OutArgument>
-          </Assign.To>
-          <Assign.Value>
-            <InArgument x:TypeArguments="s:DateTime">[Now]</InArgument>
-          </Assign.Value>
-          <sap:WorkflowViewStateService.ViewState>
-            <scg:Dictionary x:TypeArguments="x:String, x:Object">
-              <x:Boolean x:Key="IsExpanded">False</x:Boolean>
-              <x:Boolean x:Key="IsPinned">False</x:Boolean>
-            </scg:Dictionary>
-          </sap:WorkflowViewStateService.ViewState>
-        </Assign>
-        <Assign DisplayName="Assign - dateEndTwo" sap:VirtualizedContainerService.HintSize="416,57" sap2010:WorkflowViewState.IdRef="Assign_49">
-          <Assign.To>
-            <OutArgument x:TypeArguments="s:DateTime">[dateEndTwo]</OutArgument>
-          </Assign.To>
-          <Assign.Value>
-            <InArgument x:TypeArguments="s:DateTime">[dateEnd.AddHours(67)]</InArgument>
-          </Assign.Value>
-          <sap:WorkflowViewStateService.ViewState>
-            <scg:Dictionary x:TypeArguments="x:String, x:Object">
-              <x:Boolean x:Key="IsExpanded">False</x:Boolean>
-              <x:Boolean x:Key="IsPinned">False</x:Boolean>
-            </scg:Dictionary>
-          </sap:WorkflowViewStateService.ViewState>
-        </Assign>
-        <Assign DisplayName="Assign - dateStart" sap:VirtualizedContainerService.HintSize="416,57" sap2010:WorkflowViewState.IdRef="Assign_46">
-          <Assign.To>
-            <OutArgument x:TypeArguments="s:DateTime">[dateStart]</OutArgument>
-          </Assign.To>
-          <Assign.Value>
-            <InArgument x:TypeArguments="s:DateTime">[Now]</InArgument>
-          </Assign.Value>
-          <sap:WorkflowViewStateService.ViewState>
-            <scg:Dictionary x:TypeArguments="x:String, x:Object">
-              <x:Boolean x:Key="IsExpanded">False</x:Boolean>
-              <x:Boolean x:Key="IsPinned">False</x:Boolean>
-            </scg:Dictionary>
-          </sap:WorkflowViewStateService.ViewState>
-        </Assign>
-        <Assign DisplayName="Assign - dateStartTwo" sap:VirtualizedContainerService.HintSize="416,57" sap2010:WorkflowViewState.IdRef="Assign_48">
-          <Assign.To>
-            <OutArgument x:TypeArguments="s:DateTime">[dateStartTwo]</OutArgument>
-          </Assign.To>
-          <Assign.Value>
-            <InArgument x:TypeArguments="s:DateTime">[dateStart.AddDays(-3)]</InArgument>
-          </Assign.Value>
-          <sap:WorkflowViewStateService.ViewState>
-            <scg:Dictionary x:TypeArguments="x:String, x:Object">
-              <x:Boolean x:Key="IsExpanded">False</x:Boolean>
-              <x:Boolean x:Key="IsPinned">False</x:Boolean>
-            </scg:Dictionary>
-          </sap:WorkflowViewStateService.ViewState>
-        </Assign>
-        <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="416,57" sap2010:WorkflowViewState.IdRef="LogMessage_31" Level="Info" Message="[dateEnd.ToString + &quot; -- &quot; + dateEndTwo.ToString]">
-          <sap:WorkflowViewStateService.ViewState>
-            <scg:Dictionary x:TypeArguments="x:String, x:Object">
-              <x:Boolean x:Key="IsExpanded">False</x:Boolean>
-              <x:Boolean x:Key="IsPinned">False</x:Boolean>
-            </scg:Dictionary>
-          </sap:WorkflowViewStateService.ViewState>
-        </ui:LogMessage>
-        <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="416,48" sap2010:WorkflowViewState.IdRef="LogMessage_30" Level="Info" Message="[dateStart.ToString + &quot; -- &quot; + dateStartTwo.ToString]">
-          <sap:WorkflowViewStateService.ViewState>
-            <scg:Dictionary x:TypeArguments="x:String, x:Object">
-              <x:Boolean x:Key="IsExpanded">False</x:Boolean>
-              <x:Boolean x:Key="IsPinned">False</x:Boolean>
-            </scg:Dictionary>
-          </sap:WorkflowViewStateService.ViewState>
-        </ui:LogMessage>
-      </Sequence>
-      <Sequence DisplayName="Subtract" sap:VirtualizedContainerService.HintSize="450,420" sap2010:WorkflowViewState.IdRef="Sequence_31">
-        <sap:WorkflowViewStateService.ViewState>
-          <scg:Dictionary x:TypeArguments="x:String, x:Object">
-            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
-          </scg:Dictionary>
-        </sap:WorkflowViewStateService.ViewState>
-        <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="416,173" sap2010:WorkflowViewState.IdRef="LogMessage_33" Level="Info" Message="[dateEndTwo.Subtract(dateStartTwo)]" />
-        <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="416,164" sap2010:WorkflowViewState.IdRef="LogMessage_34" Level="Info" Message="[DateDiff(DateInterval.Hour,dateEndTwo, dateStartTwo).ToString]" />
-      </Sequence>
-    </Sequence>
-    <Sequence DisplayName="UiPath Activities" sap:VirtualizedContainerService.HintSize="484,48" sap2010:WorkflowViewState.IdRef="Sequence_6">
+    <Sequence DisplayName="UiPath Activities" sap:VirtualizedContainerService.HintSize="450,48" sap2010:WorkflowViewState.IdRef="Sequence_6">
       <sap:WorkflowViewStateService.ViewState>
         <scg:Dictionary x:TypeArguments="x:String, x:Object">
           <x:Boolean x:Key="IsExpanded">False</x:Boolean>
