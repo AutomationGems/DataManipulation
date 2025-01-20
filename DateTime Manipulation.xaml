@@ -82,13 +82,13 @@
       <AssemblyReference>UiPath.Workflow</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="DateTime_Manipulation" sap:VirtualizedContainerService.HintSize="1547,778.04" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="DateTime_Manipulation" sap:VirtualizedContainerService.HintSize="1547,898.04" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <sap:WorkflowViewStateService.ViewState>
       <scg:Dictionary x:TypeArguments="x:String, x:Object">
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <Sequence sap2010:Annotation.AnnotationText="Initiate DateTimes using different methods" DisplayName="Create a DateTime" sap:VirtualizedContainerService.HintSize="484,88" sap2010:WorkflowViewState.IdRef="Sequence_2">
+    <Sequence sap2010:Annotation.AnnotationText="Initiate DateTimes using different methods" DisplayName="Create a DateTime" sap:VirtualizedContainerService.HintSize="450,88" sap2010:WorkflowViewState.IdRef="Sequence_2">
       <Sequence.Variables>
         <Variable x:TypeArguments="s:DateTime" Name="dateNow" />
         <Variable x:TypeArguments="s:DateTime" Name="dateToday" />
@@ -156,7 +156,7 @@
       </Assign>
       <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="434,164" sap2010:WorkflowViewState.IdRef="LogMessage_2" Level="Info" Message="[&quot;dateNow: &quot; + dateNow.ToString + Environment.NewLine +&#xA;&quot;dateToday: &quot; + dateToday.ToString + Environment.NewLine +&#xA;&quot;dateNew: &quot; + dateUtc.ToString + Environment.NewLine +&#xA;&quot;dateSpecific: &quot; + dateSpecific.ToString]" />
     </Sequence>
-    <Sequence sap2010:Annotation.AnnotationText="Convert a string to a DateTime using different methods" DisplayName="From String to DateTime" sap:VirtualizedContainerService.HintSize="484,88" sap2010:WorkflowViewState.IdRef="Sequence_3">
+    <Sequence sap2010:Annotation.AnnotationText="Convert a string to a DateTime using different methods" DisplayName="From String to DateTime" sap:VirtualizedContainerService.HintSize="450,88" sap2010:WorkflowViewState.IdRef="Sequence_3">
       <Sequence.Variables>
         <Variable x:TypeArguments="x:String" Name="strDate" />
         <Variable x:TypeArguments="s:String[]" Name="arrValidDateFormats" />
@@ -552,7 +552,7 @@
         </ui:ForEach>
       </Sequence>
     </Sequence>
-    <Sequence sap2010:Annotation.AnnotationText="Different ways to convert DateTime to specific String-format" DisplayName="From DateTime to String" sap:VirtualizedContainerService.HintSize="484,88" sap2010:WorkflowViewState.IdRef="Sequence_4">
+    <Sequence sap2010:Annotation.AnnotationText="Different ways to convert DateTime to specific String-format" DisplayName="From DateTime to String" sap:VirtualizedContainerService.HintSize="450,88" sap2010:WorkflowViewState.IdRef="Sequence_4">
       <Sequence.Variables>
         <Variable x:TypeArguments="s:DateTime" Name="dateNow" />
       </Sequence.Variables>
@@ -588,7 +588,7 @@
       <ui:LogMessage DisplayName="Log Message - 'ToShortDateString'" sap:VirtualizedContainerService.HintSize="416,173" sap2010:WorkflowViewState.IdRef="LogMessage_28" Level="Info" Message="[&quot;ToShortDateString: &quot; + dateNow.ToShortDateString]" />
       <ui:LogMessage DisplayName="Log Message - 'ToShortTimeString'" sap:VirtualizedContainerService.HintSize="416,164" sap2010:WorkflowViewState.IdRef="LogMessage_29" Level="Info" Message="[&quot;ToShortTimeString: &quot; + dateNow.ToShortTimeString]" />
     </Sequence>
-    <Sequence sap2010:Annotation.AnnotationText="Different functions to work with DateTimes" DisplayName="DateTime Functions" sap:VirtualizedContainerService.HintSize="484,88" sap2010:WorkflowViewState.IdRef="Sequence_5">
+    <Sequence sap2010:Annotation.AnnotationText="Different functions to work with DateTimes" DisplayName="DateTime Functions" sap:VirtualizedContainerService.HintSize="450,88" sap2010:WorkflowViewState.IdRef="Sequence_5">
       <sap:WorkflowViewStateService.ViewState>
         <scg:Dictionary x:TypeArguments="x:String, x:Object">
           <x:Boolean x:Key="IsExpanded">False</x:Boolean>
@@ -719,10 +719,10 @@
         <ui:LogMessage DisplayName="Log Message - Is dateOne latest?" sap:VirtualizedContainerService.HintSize="434,164" sap2010:WorkflowViewState.IdRef="LogMessage_39" Level="Info" Message="[dateOne &gt; dateTwo]" />
       </Sequence>
     </Sequence>
-    <Sequence sap2010:Annotation.AnnotationText="Using UiPath activities to manipulate DateTimes" DisplayName="UiPath Activities" sap:VirtualizedContainerService.HintSize="484,369" sap2010:WorkflowViewState.IdRef="Sequence_6">
+    <Sequence sap2010:Annotation.AnnotationText="Using UiPath activities to manipulate DateTimes" DisplayName="UiPath Activities" sap:VirtualizedContainerService.HintSize="450,79" sap2010:WorkflowViewState.IdRef="Sequence_6">
       <sap:WorkflowViewStateService.ViewState>
         <scg:Dictionary x:TypeArguments="x:String, x:Object">
-          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+          <x:Boolean x:Key="IsExpanded">False</x:Boolean>
           <x:Boolean x:Key="IsPinned">False</x:Boolean>
           <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
         </scg:Dictionary>
