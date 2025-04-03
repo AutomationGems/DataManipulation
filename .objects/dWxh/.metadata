@@ -1,0 +1,12 @@
+﻿{
+  "Name": "BRAND - EASYCAL™ 5",
+  "Type": "App",
+  "Id": "dWxht16-5EmNe4zK0Ag7uw",
+  "Reference": "WTei6x1Vj0ydWjHwUAnj-A/dWxht16-5EmNe4zK0Ag7uw",
+  "Created": "2025-03-31T12:42:38.0936011Z",
+  "Updated": "2025-03-31T12:42:38.0936011Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=24.10.10.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=24.11.1.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

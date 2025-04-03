@@ -68,13 +68,13 @@
       <AssemblyReference>System.Linq.Expressions</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="Time_Manipulation" sap:VirtualizedContainerService.HintSize="2187,1138.04" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="Time_Manipulation" sap:VirtualizedContainerService.HintSize="3161,1298.04" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <sap:WorkflowViewStateService.ViewState>
       <scg:Dictionary x:TypeArguments="x:String, x:Object">
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <Sequence sap2010:Annotation.AnnotationText="Initiate TimeSpans using different methods" DisplayName="Create a DateTime" sap:VirtualizedContainerService.HintSize="468,713" sap2010:WorkflowViewState.IdRef="Sequence_2">
+    <Sequence sap2010:Annotation.AnnotationText="Initiate TimeSpans using different methods" DisplayName="Create a TimeSpan" sap:VirtualizedContainerService.HintSize="468,713" sap2010:WorkflowViewState.IdRef="Sequence_2">
       <Sequence.Variables>
         <Variable x:TypeArguments="s:DateTime" Name="dateNow" />
         <Variable x:TypeArguments="s:DateTime" Name="dateToday" />
@@ -130,7 +130,7 @@
           </scg:Dictionary>
         </sap:WorkflowViewStateService.ViewState>
       </Assign>
-      <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="434,164" sap2010:WorkflowViewState.IdRef="LogMessage_1" Level="Info" Message="[&quot;tsNew: &quot; + tsNew.ToString + Environment.NewLine +&#xD;&#xA;&quot;tsFromSeconds: &quot; + tsFromSeconds.ToString + Environment.NewLine +&#xD;&#xA;&quot;tsFromMinutes: &quot; + tsFromMinutes.ToString]" />
+      <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="434,164" sap2010:WorkflowViewState.IdRef="LogMessage_1" Level="Info" Message="[&quot;tsNew: &quot; + tsNew.ToString + Environment.NewLine +&#xA;&quot;tsFromSeconds: &quot; + tsFromSeconds.ToString + Environment.NewLine +&#xA;&quot;tsFromMinutes: &quot; + tsFromMinutes.ToString]" />
     </Sequence>
   </Sequence>
 </Activity>

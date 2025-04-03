@@ -62,6 +62,18 @@
       "ArgumentsSectionElementsOrder": [],
       "ConstantsSectionElementsOrder": [],
       "AddedNamespaces": null
+    },
+    {
+      "Path": "WIP.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "boolValid&Sequence_1",
+        "dateOutput&Sequence_1",
+        "strInput&Sequence_1"
+      ],
+      "ArgumentsSectionElementsOrder": [],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
     }
   ]
 }

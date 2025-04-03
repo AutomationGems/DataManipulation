@@ -1,4 +1,4 @@
-<Activity mc:Ignorable="sap sap2010" x:Class="DateTime_Manipulation" VisualBasic.Settings="{x:Null}" sap2010:WorkflowViewState.IdRef="DateTime_Manipulation_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:s="clr-namespace:System;assembly=System.Private.CoreLib" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:uasd="clr-namespace:UiPath.Activities.System.Date;assembly=UiPath.System.Activities" xmlns:uast="clr-namespace:UiPath.Activities.System.Text;assembly=UiPath.System.Activities" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+<Activity mc:Ignorable="sap sap2010" x:Class="DateTime_Manipulation" VisualBasic.Settings="{x:Null}" sap2010:WorkflowViewState.IdRef="DateTime_Manipulation_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:s="clr-namespace:System;assembly=System.Private.CoreLib" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:sg="clr-namespace:System.Globalization;assembly=System.Private.CoreLib" xmlns:uasd="clr-namespace:UiPath.Activities.System.Date;assembly=UiPath.System.Activities" xmlns:uast="clr-namespace:UiPath.Activities.System.Text;assembly=UiPath.System.Activities" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
   <TextExpression.NamespacesForImplementation>
     <sco:Collection x:TypeArguments="x:String">
       <x:String>System.Activities</x:String>
@@ -82,13 +82,13 @@
       <AssemblyReference>UiPath.Workflow</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="DateTime_Manipulation" sap:VirtualizedContainerService.HintSize="1547,898.04" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="DateTime_Manipulation" sap:VirtualizedContainerService.HintSize="3144,1815" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <sap:WorkflowViewStateService.ViewState>
       <scg:Dictionary x:TypeArguments="x:String, x:Object">
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <Sequence sap2010:Annotation.AnnotationText="Initiate DateTimes using different methods" DisplayName="Create a DateTime" sap:VirtualizedContainerService.HintSize="450,88" sap2010:WorkflowViewState.IdRef="Sequence_2">
+    <Sequence sap2010:Annotation.AnnotationText="Initiate DateTimes using different methods" DisplayName="Create a DateTime" sap:VirtualizedContainerService.HintSize="502,88" sap2010:WorkflowViewState.IdRef="Sequence_2">
       <Sequence.Variables>
         <Variable x:TypeArguments="s:DateTime" Name="dateNow" />
         <Variable x:TypeArguments="s:DateTime" Name="dateToday" />
@@ -156,19 +156,19 @@
       </Assign>
       <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="434,164" sap2010:WorkflowViewState.IdRef="LogMessage_2" Level="Info" Message="[&quot;dateNow: &quot; + dateNow.ToString + Environment.NewLine +&#xA;&quot;dateToday: &quot; + dateToday.ToString + Environment.NewLine +&#xA;&quot;dateNew: &quot; + dateUtc.ToString + Environment.NewLine +&#xA;&quot;dateSpecific: &quot; + dateSpecific.ToString]" />
     </Sequence>
-    <Sequence sap2010:Annotation.AnnotationText="Convert a string to a DateTime using different methods" DisplayName="From String to DateTime" sap:VirtualizedContainerService.HintSize="450,88" sap2010:WorkflowViewState.IdRef="Sequence_3">
+    <Sequence sap2010:Annotation.AnnotationText="Convert a string to a DateTime using different methods" DisplayName="From String to DateTime" sap:VirtualizedContainerService.HintSize="502,1449" sap2010:WorkflowViewState.IdRef="Sequence_3">
       <Sequence.Variables>
         <Variable x:TypeArguments="x:String" Name="strDate" />
         <Variable x:TypeArguments="s:String[]" Name="arrValidDateFormats" />
       </Sequence.Variables>
       <sap:WorkflowViewStateService.ViewState>
         <scg:Dictionary x:TypeArguments="x:String, x:Object">
-          <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
           <x:Boolean x:Key="IsPinned">False</x:Boolean>
           <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
-      <Sequence DisplayName="'CDate'-Method" sap:VirtualizedContainerService.HintSize="450,57" sap2010:WorkflowViewState.IdRef="Sequence_8">
+      <Sequence DisplayName="'CDate'-Method" sap:VirtualizedContainerService.HintSize="468,57" sap2010:WorkflowViewState.IdRef="Sequence_8">
         <Sequence.Variables>
           <Variable x:TypeArguments="s:DateTime" Name="dateCDate" />
         </Sequence.Variables>
@@ -196,7 +196,7 @@
         </Assign>
         <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="434,164" sap2010:WorkflowViewState.IdRef="LogMessage_4" Level="Info" Message="[&quot;Original date in string: &quot; + strDate + Environment.NewLine +&#xA;&quot;dateCDate: &quot; + dateCDate.ToString]" />
       </Sequence>
-      <Sequence DisplayName="'Convert.ToDateTime'-method" sap:VirtualizedContainerService.HintSize="450,57" sap2010:WorkflowViewState.IdRef="Sequence_9">
+      <Sequence DisplayName="'Convert.ToDateTime'-method" sap:VirtualizedContainerService.HintSize="468,57" sap2010:WorkflowViewState.IdRef="Sequence_9">
         <Sequence.Variables>
           <Variable x:TypeArguments="s:DateTime" Name="dateConvert" />
         </Sequence.Variables>
@@ -224,7 +224,7 @@
         </Assign>
         <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="434,164" sap2010:WorkflowViewState.IdRef="LogMessage_5" Level="Info" Message="[&quot;Original date in string: &quot; + strDate + Environment.NewLine +&#xA;&quot;dateConvert: &quot; + dateConvert.ToString]" />
       </Sequence>
-      <Sequence DisplayName="'Parse'-method" sap:VirtualizedContainerService.HintSize="450,57" sap2010:WorkflowViewState.IdRef="Sequence_10">
+      <Sequence DisplayName="'Parse'-method" sap:VirtualizedContainerService.HintSize="468,57" sap2010:WorkflowViewState.IdRef="Sequence_10">
         <Sequence.Variables>
           <Variable x:TypeArguments="s:DateTime" Name="dateParse" />
         </Sequence.Variables>
@@ -269,7 +269,7 @@
         </Assign>
         <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="434,164" sap2010:WorkflowViewState.IdRef="LogMessage_16" Level="Info" Message="[&quot;Original date in string: &quot; + strDate + Environment.NewLine +&#xA;&quot;dateParse with culture set to 'da-DK': &quot; + dateParse.ToString]" />
       </Sequence>
-      <Sequence DisplayName="'ParseExact'-method" sap:VirtualizedContainerService.HintSize="450,57" sap2010:WorkflowViewState.IdRef="Sequence_12">
+      <Sequence DisplayName="'ParseExact'-method" sap:VirtualizedContainerService.HintSize="468,57" sap2010:WorkflowViewState.IdRef="Sequence_12">
         <Sequence.Variables>
           <Variable x:TypeArguments="s:DateTime" Name="dateParseExact" />
         </Sequence.Variables>
@@ -297,7 +297,7 @@
         </Assign>
         <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="434,164" sap2010:WorkflowViewState.IdRef="LogMessage_8" Level="Info" Message="[&quot;Original date in string: &quot; + strDate + Environment.NewLine +&#xA;&quot;dateParseExact: &quot; + dateParseExact.ToString]" />
       </Sequence>
-      <Sequence DisplayName="'ParseExact'-method (Mulitple valid formats)" sap:VirtualizedContainerService.HintSize="450,57" sap2010:WorkflowViewState.IdRef="Sequence_13">
+      <Sequence DisplayName="'ParseExact'-method (Mulitple valid formats)" sap:VirtualizedContainerService.HintSize="468,57" sap2010:WorkflowViewState.IdRef="Sequence_13">
         <Sequence.Variables>
           <Variable x:TypeArguments="s:String[]" Name="arrDatesToConvert" />
           <Variable x:TypeArguments="s:DateTime" Name="dateParseExactMultiple" />
@@ -350,7 +350,7 @@
           </ui:ForEach.Body>
         </ui:ForEach>
       </Sequence>
-      <Sequence DisplayName="'TryParse'-method" sap:VirtualizedContainerService.HintSize="450,57" sap2010:WorkflowViewState.IdRef="Sequence_16">
+      <Sequence DisplayName="'TryParse'-method" sap:VirtualizedContainerService.HintSize="468,57" sap2010:WorkflowViewState.IdRef="Sequence_16">
         <Sequence.Variables>
           <Variable x:TypeArguments="s:DateTime" Name="dateParse" />
           <Variable x:TypeArguments="x:Boolean" Name="boolDateIsValid" />
@@ -408,7 +408,7 @@
           </If.Else>
         </If>
       </Sequence>
-      <Sequence DisplayName="'TryParseExact'-method" sap:VirtualizedContainerService.HintSize="450,57" sap2010:WorkflowViewState.IdRef="Sequence_17">
+      <Sequence DisplayName="'TryParseExact'-method" sap:VirtualizedContainerService.HintSize="468,57" sap2010:WorkflowViewState.IdRef="Sequence_17">
         <Sequence.Variables>
           <Variable x:TypeArguments="s:DateTime" Name="dateParseExact" />
           <Variable x:TypeArguments="x:Boolean" Name="boolDateIsValid" />
@@ -466,7 +466,7 @@
           </If.Else>
         </If>
       </Sequence>
-      <Sequence DisplayName="'TryParseExact'-method (Mulitple valid formats)" sap:VirtualizedContainerService.HintSize="450,48" sap2010:WorkflowViewState.IdRef="Sequence_25">
+      <Sequence DisplayName="'TryParseExact'-method (Mulitple valid formats)" sap:VirtualizedContainerService.HintSize="468,57" sap2010:WorkflowViewState.IdRef="Sequence_25">
         <Sequence.Variables>
           <Variable x:TypeArguments="s:String[]" Name="arrDatesToConvert" />
           <Variable x:TypeArguments="s:DateTime" Name="dateParseExactMultiple" />
@@ -551,8 +551,69 @@
           </ui:ForEach.Body>
         </ui:ForEach>
       </Sequence>
+      <Sequence DisplayName="'Invoke Method'-method" sap:VirtualizedContainerService.HintSize="468,870" sap2010:WorkflowViewState.IdRef="Sequence_38">
+        <Sequence.Variables>
+          <Variable x:TypeArguments="x:Boolean" Name="boolValid" />
+          <Variable x:TypeArguments="s:DateTime" Name="dateOutput" />
+        </Sequence.Variables>
+        <sap:WorkflowViewStateService.ViewState>
+          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+          </scg:Dictionary>
+        </sap:WorkflowViewStateService.ViewState>
+        <Assign DisplayName="Assign - strDate" sap:VirtualizedContainerService.HintSize="434,114" sap2010:WorkflowViewState.IdRef="Assign_56">
+          <Assign.To>
+            <OutArgument x:TypeArguments="x:String">[strDate]</OutArgument>
+          </Assign.To>
+          <Assign.Value>
+            <InArgument x:TypeArguments="x:String">26. Maj 2025 09:23</InArgument>
+          </Assign.Value>
+        </Assign>
+        <InvokeMethod DisplayName="Invoke Method - TryParseExact, Invariant Culture" sap:VirtualizedContainerService.HintSize="434,168" sap2010:WorkflowViewState.IdRef="InvokeMethod_3" MethodName="TryParseExact" TargetType="s:DateTime">
+          <InvokeMethod.Result>
+            <OutArgument x:TypeArguments="x:Boolean">[boolValid]</OutArgument>
+          </InvokeMethod.Result>
+          <InArgument x:TypeArguments="x:String">
+            <VisualBasicValue x:TypeArguments="x:String" ExpressionText="strDate" />
+          </InArgument>
+          <InArgument x:TypeArguments="x:String">
+            <Literal x:TypeArguments="x:String">dd. MMM yyyy HH:mm</Literal>
+          </InArgument>
+          <InArgument x:TypeArguments="sg:CultureInfo">
+            <VisualBasicValue x:TypeArguments="sg:CultureInfo" ExpressionText="CultureInfo.InvariantCulture" />
+          </InArgument>
+          <InArgument x:TypeArguments="sg:DateTimeStyles">
+            <VisualBasicValue x:TypeArguments="sg:DateTimeStyles" ExpressionText="DateTimeStyles.None" />
+          </InArgument>
+          <OutArgument x:TypeArguments="s:DateTime">
+            <VisualBasicReference x:TypeArguments="s:DateTime" ExpressionText="dateOutput" />
+          </OutArgument>
+        </InvokeMethod>
+        <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="434,173" sap2010:WorkflowViewState.IdRef="LogMessage_46" Message="[&quot;strDate was in valid format: &quot; + boolValid.ToString]" />
+        <InvokeMethod DisplayName="Invoke Method - TryParseExact, Culture" sap:VirtualizedContainerService.HintSize="434,168" sap2010:WorkflowViewState.IdRef="InvokeMethod_1" MethodName="TryParseExact" TargetType="s:DateTime">
+          <InvokeMethod.Result>
+            <OutArgument x:TypeArguments="x:Boolean">[boolValid]</OutArgument>
+          </InvokeMethod.Result>
+          <InArgument x:TypeArguments="x:String">
+            <VisualBasicValue x:TypeArguments="x:String" ExpressionText="strDate" />
+          </InArgument>
+          <InArgument x:TypeArguments="x:String">
+            <Literal x:TypeArguments="x:String">dd. MMM yyyy HH:mm</Literal>
+          </InArgument>
+          <InArgument x:TypeArguments="sg:CultureInfo">
+            <VisualBasicValue x:TypeArguments="sg:CultureInfo" ExpressionText="New CultureInfo(&quot;da-DK&quot;)" />
+          </InArgument>
+          <InArgument x:TypeArguments="sg:DateTimeStyles">
+            <VisualBasicValue x:TypeArguments="sg:DateTimeStyles" ExpressionText="DateTimeStyles.None" />
+          </InArgument>
+          <OutArgument x:TypeArguments="s:DateTime">
+            <VisualBasicReference x:TypeArguments="s:DateTime" ExpressionText="dateOutput" />
+          </OutArgument>
+        </InvokeMethod>
+        <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="434,164" sap2010:WorkflowViewState.IdRef="LogMessage_47" Message="[&quot;strDate was in valid format: &quot; + boolValid.ToString]" />
+      </Sequence>
     </Sequence>
-    <Sequence sap2010:Annotation.AnnotationText="Different ways to convert DateTime to specific String-format" DisplayName="From DateTime to String" sap:VirtualizedContainerService.HintSize="450,88" sap2010:WorkflowViewState.IdRef="Sequence_4">
+    <Sequence sap2010:Annotation.AnnotationText="Different ways to convert DateTime to specific String-format" DisplayName="From DateTime to String" sap:VirtualizedContainerService.HintSize="502,88" sap2010:WorkflowViewState.IdRef="Sequence_4">
       <Sequence.Variables>
         <Variable x:TypeArguments="s:DateTime" Name="dateNow" />
       </Sequence.Variables>
@@ -588,7 +649,7 @@
       <ui:LogMessage DisplayName="Log Message - 'ToShortDateString'" sap:VirtualizedContainerService.HintSize="416,173" sap2010:WorkflowViewState.IdRef="LogMessage_28" Level="Info" Message="[&quot;ToShortDateString: &quot; + dateNow.ToShortDateString]" />
       <ui:LogMessage DisplayName="Log Message - 'ToShortTimeString'" sap:VirtualizedContainerService.HintSize="416,164" sap2010:WorkflowViewState.IdRef="LogMessage_29" Level="Info" Message="[&quot;ToShortTimeString: &quot; + dateNow.ToShortTimeString]" />
     </Sequence>
-    <Sequence sap2010:Annotation.AnnotationText="Different functions to work with DateTimes" DisplayName="DateTime Functions" sap:VirtualizedContainerService.HintSize="450,88" sap2010:WorkflowViewState.IdRef="Sequence_5">
+    <Sequence sap2010:Annotation.AnnotationText="Different functions to work with DateTimes" DisplayName="DateTime Functions" sap:VirtualizedContainerService.HintSize="502,88" sap2010:WorkflowViewState.IdRef="Sequence_5">
       <sap:WorkflowViewStateService.ViewState>
         <scg:Dictionary x:TypeArguments="x:String, x:Object">
           <x:Boolean x:Key="IsExpanded">False</x:Boolean>
@@ -719,7 +780,7 @@
         <ui:LogMessage DisplayName="Log Message - Is dateOne latest?" sap:VirtualizedContainerService.HintSize="434,164" sap2010:WorkflowViewState.IdRef="LogMessage_39" Level="Info" Message="[dateOne &gt; dateTwo]" />
       </Sequence>
     </Sequence>
-    <Sequence sap2010:Annotation.AnnotationText="Using UiPath activities to manipulate DateTimes" DisplayName="UiPath Activities" sap:VirtualizedContainerService.HintSize="450,79" sap2010:WorkflowViewState.IdRef="Sequence_6">
+    <Sequence sap2010:Annotation.AnnotationText="Using UiPath activities to manipulate DateTimes" DisplayName="UiPath Activities" sap:VirtualizedContainerService.HintSize="502,79" sap2010:WorkflowViewState.IdRef="Sequence_6">
       <sap:WorkflowViewStateService.ViewState>
         <scg:Dictionary x:TypeArguments="x:String, x:Object">
           <x:Boolean x:Key="IsExpanded">False</x:Boolean>

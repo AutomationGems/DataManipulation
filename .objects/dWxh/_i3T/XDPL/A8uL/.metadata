@@ -1,0 +1,14 @@
+﻿{
+  "Name": "Brand.Easycal.Measureme…(1)",
+  "Type": "Element",
+  "TaxonomyType": "Dropdown",
+  "Id": "A8uL6928eEe-LbHqAO3CGQ",
+  "Reference": "WTei6x1Vj0ydWjHwUAnj-A/A8uL6928eEe-LbHqAO3CGQ",
+  "ParentRef": "WTei6x1Vj0ydWjHwUAnj-A/XDPLB-PiUUaS95t9ca5U3g",
+  "Created": "2025-03-31T12:45:18.5318341Z",
+  "Updated": "2025-03-31T12:45:18.5318341Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=24.10.10.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=24.11.1.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

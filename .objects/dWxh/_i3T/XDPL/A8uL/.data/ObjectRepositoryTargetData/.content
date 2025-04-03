@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="vKNCxGkX30un171WIQD0vA" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" CVScreenId="eb3272b7-4b46-4303-b116-411185be9c5f" CvElementArea="1979, 198, 542, 24" CvType="InputBox" DesignTimeRectangle="1983, 200, 538, 21" DesignTimeScaleFactor="1" ElementType="DropDown" FullSelectorArgument="&lt;ctrl name='Brand.Easycal.Measurement.Data.RequiredTestingInstrumentListItem' role='list item' /&gt;&lt;ctrl idx='2' role='combo box' /&gt;" FuzzySelectorArgument="&lt;ctrl name='Brand.Easycal.Measurement.Data.RequiredTestingInstrumentListItem' role='list item' /&gt;&lt;ctrl automationid='' role='combo box' /&gt;" Guid="9c348b66-b160-4ea8-9ce8-39bead55787f" ScopeSelectorArgument="&lt;wnd app='easycal.exe' cls='HwndWrapper*' title='BRAND - EASYCAL™ 5' /&gt;" SearchSteps="Selector, FuzzySelector, CV" Version="V4" Visibility="Interactive">
+      <imageRef attrName="InformativeScreenshot" originalValue="846e78d5c7c7cc49ef666bfdab62523d.png" xmlns="">0fIE-_kVjT0OzoYjKmHi6CQ</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">GetText</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>
