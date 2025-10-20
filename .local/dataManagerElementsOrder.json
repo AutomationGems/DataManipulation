@@ -12,6 +12,8 @@
       "Path": "DateTime Manipulation.xaml",
       "SortBy": 0,
       "VariablesSectionElementsOrder": [
+        "dateOutput&Sequence_38",
+        "boolValid&Sequence_38",
         "dateNow&Sequence_2",
         "dateToday&Sequence_2",
         "dateUtc&Sequence_2",
@@ -71,6 +73,14 @@
         "dateOutput&Sequence_1",
         "strInput&Sequence_1"
       ],
+      "ArgumentsSectionElementsOrder": [],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "String Manipulation.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [],
       "ArgumentsSectionElementsOrder": [],
       "ConstantsSectionElementsOrder": [],
       "AddedNamespaces": null
